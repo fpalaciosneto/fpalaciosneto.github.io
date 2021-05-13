@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- SEO -->
-    <title>Relatório</title>
+    <title>Relatorio</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -105,22 +105,995 @@ polygonTemplate.events.on("hover", function(ev) {
 // Load data when map polygons are ready
 chart.events.on("ready", loadStores);
 
-var chartData = {"query_results":[  
-      {  
-         "MAIL_ST_PROV_C":"PR",
-         "LNGTD_I":"-49.0946",
-         "LATTD_I":"-25.0075",
-         "mail_city_n":"Curitiba",
-         "count":10
-      },
-      {  
-         "MAIL_ST_PROV_C":"PR",
-         "LNGTD_I":"-42.0946",
-         "LATTD_I":"-21.0075",
-         "mail_city_n":"Sao Jose dos Pinhais",
-         "count":5
-      }
-   ]}
+var chartData = {"query_results":[
+  {
+    "MAIL_ST_PROV_C": "DF",
+    "LNGTD_I": -47.8879,
+    "LATTD_I": -15.7941,
+    "mail_city_n": "BRASÍLIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "ES",
+    "LNGTD_I": -40.2752,
+    "LATTD_I": -20.1568,
+    "mail_city_n": "SERRA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "ES",
+    "LNGTD_I": -40.294,
+    "LATTD_I": -20.3384,
+    "mail_city_n": "VILA VELHA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "GO",
+    "LNGTD_I": -40.294,
+    "LATTD_I": -16.7588,
+    "mail_city_n": "ABADIA DE GOIÁS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "GO",
+    "LNGTD_I": -49.2558,
+    "LATTD_I": -16.6733,
+    "mail_city_n": "GOIÂNIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -43.7762,
+    "LATTD_I": -21.2249,
+    "mail_city_n": "BARBACENA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -43.9265,
+    "LATTD_I": -19.9375,
+    "mail_city_n": "BELO HORIZONTE",
+    "count": 3
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -44.1976,
+    "LATTD_I": -19.9654,
+    "mail_city_n": "BETIM",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -44.0663,
+    "LATTD_I": -19.9434,
+    "mail_city_n": "CONTAGEM",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -44.8939,
+    "LATTD_I": -20.1421,
+    "mail_city_n": "DIVINÓPOLIS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -46.1755,
+    "LATTD_I": -17.7419,
+    "mail_city_n": "JOÃO PINHEIRO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -42.0338,
+    "LATTD_I": -20.2587,
+    "mail_city_n": "MANHUAÇU",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -43.0084,
+    "LATTD_I": -21.8669,
+    "mail_city_n": "MAR DE ESPANHA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MG",
+    "LNGTD_I": -46.9771,
+    "LATTD_I": -21.1905,
+    "mail_city_n": "MONTE SANTO DE MINAS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MS",
+    "LNGTD_I": -54.2817,
+    "LATTD_I": -23.9353,
+    "mail_city_n": "MUNDO NOVO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "MT",
+    "LNGTD_I": -56.0733,
+    "LATTD_I": -15.57,
+    "mail_city_n": "CUIABÁ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PE",
+    "LNGTD_I": -34.8889,
+    "LATTD_I": -8.0628,
+    "mail_city_n": "RECIFE",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.3003,
+    "LATTD_I": -25.3134,
+    "mail_city_n": "ALMIRANTE TAMANDARÉ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.46,
+    "LATTD_I": -23.5516,
+    "mail_city_n": "APUCARANA",
+    "count": 4
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.4383,
+    "LATTD_I": -23.4135,
+    "mail_city_n": "ARAPONGAS",
+    "count": 3
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.4019,
+    "LATTD_I": -25.5916,
+    "mail_city_n": "ARAUCÁRIA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -52.0557,
+    "LATTD_I": -23.1516,
+    "mail_city_n": "ATALAIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.3249,
+    "LATTD_I": -24.6157,
+    "mail_city_n": "CAFELÂNDIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.0776,
+    "LATTD_I": -23.0413,
+    "mail_city_n": "CAMBARÁ",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.2777,
+    "LATTD_I": -23.2816,
+    "mail_city_n": "CAMBÉ",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.0535,
+    "LATTD_I": -25.3032,
+    "mail_city_n": "CAMPINA GRANDE DO SUL",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.5288,
+    "LATTD_I": -25.4595,
+    "mail_city_n": "CAMPO LARGO",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.4597,
+    "LATTD_I": -24.9538,
+    "mail_city_n": "CASCAVEL",
+    "count": 3
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.2274,
+    "LATTD_I": -25.2943,
+    "mail_city_n": "COLOMBO",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -52.164,
+    "LATTD_I": -22.9652,
+    "mail_city_n": "CRUZEIRO DO SUL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.2718,
+    "LATTD_I": -25.433,
+    "mail_city_n": "CURITIBA",
+    "count": 39
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.3233,
+    "LATTD_I": -25.6414,
+    "mail_city_n": "FAZENDA RIO GRANDE",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.844,
+    "LATTD_I": -24.0676,
+    "mail_city_n": "FRANCISCO ALVES",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.0561,
+    "LATTD_I": -26.0785,
+    "mail_city_n": "FRANCISCO BELTRÃO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.8099,
+    "LATTD_I": -25.1899,
+    "mail_city_n": "GUAMIRANGA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.6504,
+    "LATTD_I": -22.9744,
+    "mail_city_n": "GUARACI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.4634,
+    "LATTD_I": -25.3936,
+    "mail_city_n": "GUARAPUAVA",
+    "count": 4
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.1907,
+    "LATTD_I": -23.8498,
+    "mail_city_n": "IBAITI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.5975,
+    "LATTD_I": -25.2306,
+    "mail_city_n": "IMBITUVA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.658,
+    "LATTD_I": -25.4737,
+    "mail_city_n": "IRATI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.6746,
+    "LATTD_I": -24.2419,
+    "mail_city_n": "IVAIPORÃ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.6434,
+    "LATTD_I": -23.6012,
+    "mail_city_n": "JANDAIA DO SUL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.9741,
+    "LATTD_I": -23.2573,
+    "mail_city_n": "JATAIZINHO",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.1628,
+    "LATTD_I": -23.3122,
+    "mail_city_n": "LONDRINA",
+    "count": 3
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.3228,
+    "LATTD_I": -25.7596,
+    "mail_city_n": "MANDIRITUBA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -52.1763,
+    "LATTD_I": -25.943,
+    "mail_city_n": "MANGUEIRINHA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -54.06,
+    "LATTD_I": -24.5593,
+    "mail_city_n": "MARECHAL CÂNDIDO RONDON",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.9399,
+    "LATTD_I": -23.4223,
+    "mail_city_n": "MARINGÁ",
+    "count": 17
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -48.5338,
+    "LATTD_I": -25.8164,
+    "mail_city_n": "MATINHOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -54.0918,
+    "LATTD_I": -25.2925,
+    "mail_city_n": "MEDIANEIRA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.2575,
+    "LATTD_I": -24.5285,
+    "mail_city_n": "NOVA AURORA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -52.0524,
+    "LATTD_I": -23.4577,
+    "mail_city_n": "PAIÇANDU",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.0032,
+    "LATTD_I": -25.4186,
+    "mail_city_n": "PALMEIRA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -52.4624,
+    "LATTD_I": -23.0819,
+    "mail_city_n": "PARANAVAÍ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.0653,
+    "LATTD_I": -25.4466,
+    "mail_city_n": "PIRAQUARA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.7632,
+    "LATTD_I": -24.7527,
+    "mail_city_n": "PITANGA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.1614,
+    "LATTD_I": -25.0925,
+    "mail_city_n": "PONTA GROSSA",
+    "count": 36
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -48.4483,
+    "LATTD_I": -25.5942,
+    "mail_city_n": "PONTAL DO PARANÁ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -52.1577,
+    "LATTD_I": -23.2815,
+    "mail_city_n": "PRESIDENTE CASTELO BRANCO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.9153,
+    "LATTD_I": -23.5642,
+    "mail_city_n": "QUATIGUÁ",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.0852,
+    "LATTD_I": -25.3737,
+    "mail_city_n": "QUATRO BARRAS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.7872,
+    "LATTD_I": -25.7161,
+    "mail_city_n": "RIO AZUL",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.3628,
+    "LATTD_I": -23.3136,
+    "mail_city_n": "ROLÂNDIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.0773,
+    "LATTD_I": -23.297,
+    "mail_city_n": "SANTO ANTÔNIO DA PLATINA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -49.2001,
+    "LATTD_I": -25.5377,
+    "mail_city_n": "SÃO JOSÉ DOS PINHAIS",
+    "count": 7
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.3906,
+    "LATTD_I": -25.8696,
+    "mail_city_n": "SÃO MATEUS DO SUL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -54.2421,
+    "LATTD_I": -25.3489,
+    "mail_city_n": "SÃO MIGUEL DO IGUAÇU",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.2229,
+    "LATTD_I": -22.8251,
+    "mail_city_n": "SÃO PEDRO DO PARANÁ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.8737,
+    "LATTD_I": -23.4432,
+    "mail_city_n": "SARANDI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -51.0422,
+    "LATTD_I": -23.0585,
+    "mail_city_n": "SERTANÓPOLIS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.6231,
+    "LATTD_I": -24.3287,
+    "mail_city_n": "TELÊMACO BORBA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -50.4115,
+    "LATTD_I": -24.5133,
+    "mail_city_n": "TIBAGI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "PR",
+    "LNGTD_I": -53.3085,
+    "LATTD_I": -23.764,
+    "mail_city_n": "UMUARAMA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "RJ",
+    "LNGTD_I": -44.1724,
+    "LATTD_I": -22.5453,
+    "mail_city_n": "BARRA MANSA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "RJ",
+    "LNGTD_I": -42.8603,
+    "LATTD_I": -22.7459,
+    "mail_city_n": "ITABORAÍ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RJ",
+    "LNGTD_I": -43.2279,
+    "LATTD_I": -22.8767,
+    "mail_city_n": "RIO DE JANEIRO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RO",
+    "LNGTD_I": -63.0333,
+    "LATTD_I": -9.9085,
+    "mail_city_n": "ARIQUEMES",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -53.2587,
+    "LATTD_I": -29.6457,
+    "mail_city_n": "AGUDO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -52.3778,
+    "LATTD_I": -27.6171,
+    "mail_city_n": "BARÃO DE COTEGIPE",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -51.1789,
+    "LATTD_I": -29.1669,
+    "mail_city_n": "CAXIAS DO SUL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -54.1,
+    "LATTD_I": -27.498,
+    "mail_city_n": "CRISSIUMAL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -52.2759,
+    "LATTD_I": -27.6334,
+    "mail_city_n": "ERECHIM",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -51.3101,
+    "LATTD_I": -29.454,
+    "mail_city_n": "FELIZ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -51.2752,
+    "LATTD_I": -29.8486,
+    "mail_city_n": "NOVA SANTA RITA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -52.8263,
+    "LATTD_I": -31.8638,
+    "mail_city_n": "PEDRO OSÓRIO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -51.2301,
+    "LATTD_I": -29.6963,
+    "mail_city_n": "PORTÃO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -51.2287,
+    "LATTD_I": -30.03,
+    "mail_city_n": "PORTO ALEGRE",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "RS",
+    "LNGTD_I": -51.9357,
+    "LATTD_I": -28.7108,
+    "mail_city_n": "SERAFINA CORRÊA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.765,
+    "LATTD_I": -27.5134,
+    "mail_city_n": "ANTÔNIO CARLOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.6927,
+    "LATTD_I": -26.376,
+    "mail_city_n": "ARAQUARI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -49.3864,
+    "LATTD_I": -26.9548,
+    "mail_city_n": "ASCURRA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -49.0576,
+    "LATTD_I": -26.9161,
+    "mail_city_n": "BLUMENAU",
+    "count": 4
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -53.2505,
+    "LATTD_I": -27.0731,
+    "mail_city_n": "CAIBI",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -51.2237,
+    "LATTD_I": -27.3991,
+    "mail_city_n": "CAMPOS NOVOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -50.3978,
+    "LATTD_I": -26.1788,
+    "mail_city_n": "CANOINHAS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -52.617,
+    "LATTD_I": -27.1068,
+    "mail_city_n": "CHAPECÓ",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -52.024,
+    "LATTD_I": -27.2337,
+    "mail_city_n": "CONCÓRDIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.5476,
+    "LATTD_I": -27.5878,
+    "mail_city_n": "FLORIANÓPOLIS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.9677,
+    "LATTD_I": -26.9184,
+    "mail_city_n": "GASPAR",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -49.0395,
+    "LATTD_I": -28.3291,
+    "mail_city_n": "GRAVATAL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.9921,
+    "LATTD_I": -26.4744,
+    "mail_city_n": "GUARAMIRIM",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -51.4962,
+    "LATTD_I": -27.1703,
+    "mail_city_n": "HERVAL D'OESTE",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.657,
+    "LATTD_I": -26.9074,
+    "mail_city_n": "ITAJAÍ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.8494,
+    "LATTD_I": -26.3045,
+    "mail_city_n": "JOINVILLE",
+    "count": 3
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -50.3302,
+    "LATTD_I": -27.8173,
+    "mail_city_n": "LAGES",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -49.801,
+    "LATTD_I": -26.1152,
+    "mail_city_n": "MAFRA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.6492,
+    "LATTD_I": -26.8974,
+    "mail_city_n": "NAVEGANTES",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -53.1623,
+    "LATTD_I": -27.0703,
+    "mail_city_n": "PALMITOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -52.8674,
+    "LATTD_I": -27.0695,
+    "mail_city_n": "PLANALTO ALEGRE",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -52.0145,
+    "LATTD_I": -26.8749,
+    "mail_city_n": "PONTE SERRADA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -51.0816,
+    "LATTD_I": -26.23,
+    "mail_city_n": "PORTO UNIÃO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -49.6432,
+    "LATTD_I": -27.2179,
+    "mail_city_n": "RIO DO SUL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -49.387,
+    "LATTD_I": -26.2495,
+    "mail_city_n": "SÃO BENTO DO SUL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -48.616,
+    "LATTD_I": -27.5903,
+    "mail_city_n": "SÃO JOSÉ",
+    "count": 5
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -50.3054,
+    "LATTD_I": -26.1141,
+    "mail_city_n": "TRÊS BARRAS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -51.1517,
+    "LATTD_I": -27.0061,
+    "mail_city_n": "VIDEIRA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "SC",
+    "LNGTD_I": -52.4047,
+    "LATTD_I": -26.8746,
+    "mail_city_n": "XANXERÊ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -48.9902,
+    "LATTD_I": -22.474,
+    "mail_city_n": "AGUDOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.3304,
+    "LATTD_I": -22.7409,
+    "mail_city_n": "AMERICANA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -49.083,
+    "LATTD_I": -22.3251,
+    "mail_city_n": "BAURU",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -48.4413,
+    "LATTD_I": -22.8884,
+    "mail_city_n": "BOTUCATU",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -48.9759,
+    "LATTD_I": -21.1395,
+    "mail_city_n": "CATANDUVA",
+    "count": 2
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -51.534,
+    "LATTD_I": -21.4861,
+    "mail_city_n": "DRACENA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -46.7455,
+    "LATTD_I": -22.1971,
+    "mail_city_n": "ESPÍRITO SANTO DO PINHAL",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -46.5311,
+    "LATTD_I": -23.4685,
+    "mail_city_n": "GUARULHOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -49.2389,
+    "LATTD_I": -21.0805,
+    "mail_city_n": "IBIRÁ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.0557,
+    "LATTD_I": -23.1534,
+    "mail_city_n": "ITUPEVA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.4019,
+    "LATTD_I": -22.5622,
+    "mail_city_n": "LIMEIRA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -46.1968,
+    "LATTD_I": -23.5227,
+    "mail_city_n": "MOGI DAS CRUZES",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -49.8686,
+    "LATTD_I": -22.9773,
+    "mail_city_n": "OURINHOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.1544,
+    "LATTD_I": -22.7599,
+    "mail_city_n": "PAULÍNIA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.8411,
+    "LATTD_I": -24.4943,
+    "mail_city_n": "REGISTRO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -46.4153,
+    "LATTD_I": -23.7074,
+    "mail_city_n": "RIBEIRÃO PIRES",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.8055,
+    "LATTD_I": -21.1848,
+    "mail_city_n": "RIBEIRÃO PRETO",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -46.3314,
+    "LATTD_I": -23.9337,
+    "mail_city_n": "SANTOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -49.3813,
+    "LATTD_I": -20.8126,
+    "mail_city_n": "SÃO JOSÉ DO RIO PRETO",
+    "count": 3
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -45.8842,
+    "LATTD_I": -23.1841,
+    "mail_city_n": "SÃO JOSÉ DOS CAMPOS",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -46.5704,
+    "LATTD_I": -23.5674,
+    "mail_city_n": "SÃO PAULO",
+    "count": 5
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.4579,
+    "LATTD_I": -23.4993,
+    "mail_city_n": "SOROCABA",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "SP",
+    "LNGTD_I": -47.2658,
+    "LATTD_I": -22.8221,
+    "mail_city_n": "SUMARÉ",
+    "count": 1
+  },
+  {
+    "MAIL_ST_PROV_C": "TO",
+    "LNGTD_I": -48.351,
+    "LATTD_I": -10.1633,
+    "mail_city_n": "PALMAS",
+    "count": 1
+  }
+]}
 // Loads store data
 function loadStores() {
   var loader = new am4core.DataSource();
